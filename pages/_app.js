@@ -1,7 +1,10 @@
-import '../styles/globals.css'
+import NavLink from "../components/NavLink";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+export default function Myapp({ Component, pageProps }) {
+  return (
+    <>
+      <NavLink />
+      <Component {...pageProps} />
+    </>
+  );
 }
-
-export default MyApp
