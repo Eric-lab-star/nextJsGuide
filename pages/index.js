@@ -1,13 +1,14 @@
+import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
 
+export async function getStaticProps() {
+  return {
+    notFound: true,
+  };
+}
+
 export default function HOME() {
-  return (
-    <div>
-      Read{" "}
-      <Link href="/posts/first-post">
-        <a>First Post</a>
-      </Link>
-      <h1>home</h1>
-    </div>
-  );
+  console.log(allPostsData);
+  return <div>this is Home</div>;
 }
